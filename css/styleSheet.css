@@ -1,16 +1,19 @@
+
 body{
 margin:0 ;
 padding:0;
+
 }
 .topContainer{
   display:grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr 1fr 1fr .5fr;
+  grid-template-columns: 1fr 1fr 2.4fr 1fr 1fr 1fr 1fr .5fr;
   grid-template-rows: 1fr .5fr 1fr 1fr  1fr 1fr .5fr;
   column-gap:20px;
   height:1020px;
   background-color:green;
-  background-image:url("../img/model02.jpg");
+  background-image:url("../img/model03.jpg");
   scroll-behavior: smooth;
+  overflow-x: : hidden;
 }
 .logo {
   background-color: ;
@@ -31,6 +34,7 @@ padding:0;
   height:80px;
   margin-top:40px;
   grid-column:4/8 ;
+  font-family: 'Spectral', sans-serif;
 }
 .navBar ul{
   width:80%;
@@ -38,32 +42,103 @@ padding:0;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:;
-
 }
 .navBar li{
-  width:20%;
-  float: right;
+  width:25%;
+  float:left;
 }
 .navBar li a{
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
+  color:#ffdf00;
+  -webkit-text-stroke: .1px black; /*used to give h1 text and outline */
+  font-size:30px;
 }
 .textArea {
-  background-color: orange;
-  grid-column: 2/5;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 4px ;
+  border-color: rgba(255, 157, 20, 0);
+  /** border-color: rgba(255, 157, 20, 0.26); **/
+  grid-column: 2/4;
   grid-row: 3/6 ;
+  font-size:14px;
+}
+.textArea p {
+  position:relative;
+  top:80px;
+  left:10px;
+  text-align: left;
+  color:#ffdf00;
+  -webkit-text-stroke: .1px black; /*used to give h1 text and outline */
+  font-size:24px;
+  display:inline-block;
+  font-family: 'Spectral', sans-serif;
+  font-weight:800;
+}
+.textArea h1 {
+  position:relative;
+  top:40px;
+  padding-left:10px;
+  font-size:
+  color:#ffdf00;
+  display:inline-block;
+  font-size:74px;
+  font-family: 'Spectral', sans-serif;
+  font-weight:700;
 }
 .social {
   grid-column: 8/9;
   grid-row: 3/6;
-  background-color: red;
-  width:50px;
-  padding-top: 80px;
+  background-color:;
+  width:73px;
+
 }
+.fa {
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+   border-radius: 50%;  /* Circle icon*/
+/*  margin: 5px 2px; */  /* Square icon*/
+  display:block;
+  background: #ffdf00;
+  opacity: 0.5;
+}
+
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-facebook {
+  /*  background: #3B5998; */
+    color: white;
+}
+/* Twitter */
+.fa-twitter {
+  /*  background: #55ACEE;*/
+    color: white;
+}
+/* instagram */
+.fa-instagram {
+/*  background: #125688;*/
+  color: white;
+}
+/* pinterest */
+.fa-pinterest {
+  /*background: #cb2027;*/
+  color: white;
+}
+/* snapchat */
+.fa-snapchat-ghost {
+/*  background: #fffc00;*/
+  color: white;
+}
+
 .scrollBttn {
   height:100px;
   grid-row:7/8;
