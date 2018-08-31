@@ -7,79 +7,75 @@
     <meta name="description" content="Resume, Ceevee, Online">
     <meta name="keywords" content="Resume">
     <meta name="author" content="Designe: © Copyright Colorlib - Glint, Web Programmer: Yelsin Sepulveda">
-
-
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Spectral|Archivo|Nunito|Raleway:400,800|Assistant|Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
     <script src="scripts/main.js"></script>
-
-    <title> Golden Co. </title>
+     <title> Golden Co. </title>
   </head>
 
-  <body>
-    <div class="topContainer">
-      <div class="navBar" id="navBar">
-        <ul> <!-- navbar li have a float:right for better aesthetics. List is populated from bottom to top inorder to insure correct display when launched in browser. -->
-          <li onclick="navClick()"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <span nav> NAVIGATION </span> &times; </a></li>
-          <li onclick="navClick()"> <a href="#">Home</a> </li>
-          <li onclick="navClick()"><a href="#">Shop</a></li>
-          <li onclick="navClick()"><a href="#">About</a></li>
-          <li onclick="navClick()"><a href="#">Gallery</a></li>
+   <body>
+     <div class="wrapper">
+    <div class="topContainer" id="topContainer"><!-- BEGGINING Top section / Home Section -->
+      <div class="navBar" id="navBar">              <!-- BEGGINING Navigation menu / side menu -->
+        <ul>
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <span> NAVIGATION </span> &times; </a></li>
+          <li onclick="jumpHome()"> <a href="#topContainer">Home</a> </li>
+          <li onclick="jumpShop()"><a href="#">Shop</a></li>
+          <li onclick="jumpAbout()"><a href="#smallGreeting">About</a></li>
+          <li onclick="jumpGallery()"><a href="#">Gallery</a></li>
         </ul>
-
-        <br><br><br><br><br><br>
+         <br><br><br><br><br><br>
         <hr style="height:2px;color:#ffdf00;background:#ffdf00;border:none;">
-
-        <a href="#" class="fa fa-facebook"></a>
+         <a href="#" class="fa fa-facebook"></a>    <!-- BEGGINING Social media button list -->
         <a href="#" class="fa fa-twitter"></a>
         <a href="https://www.instagram.com/goldenco__/?hl=en" target="_blank" class="fa fa-instagram"></a>
         <a href="#" class="fa fa-snapchat-ghost"></a>
-        <a href="#" class="fa fa-pinterest"></a>
-      </div>
-
-      <div class="logo">
+        <a href="#" class="fa fa-pinterest"></a>    <!-- END Social media button list END -->
+      </div>                                  <!-- EnD Navigation menu / side menu END-->
+       <div class="logo"> <!-- page logo -->
         <img src="Logo02.png" alt="Logo.jpg" >
-      </div>
-
-      <div class="menuIcon" onclick="openNav()">
+      </div>              <!-- END page logo END -->
+       <div class="menuIcon" onclick="openNav()">         <!-- menu icons -->
       <p id="Mtext" > M E N U </p>
       <p id="Micon">  &#9776;</p>
-      </div>
-
-      <div class="textArea">
+      </div>                                              <!-- END menu icons END -->
+       <div class="textArea"> <!-- main text area -->
         <p> WITH <span> GOD</span>, LIFE'S GOLDEN</p>
         <h1>Lorem ipsum dolor si amet, adipisicing sitamet dolor </h1>
         <button id="shopBttn"> SHOP GolDen Co. </button>
         <button id="galleryBttn"> VIEW OUR GALLERY </button>
-
-      </div>
-
-      <div class="social">
+       </div>                 <!-- END main text area END -->
+       <div class="social">                           <!-- Social media buttons -->
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
           <a href="https://www.instagram.com/goldenco__/?hl=en" target="_blank" class="fa fa-instagram"></a>
           <a href="#" class="fa fa-snapchat-ghost"></a>
           <a href="#" class="fa fa-pinterest"></a>
-      </div>
-
-      <div class="scrollBttn" onclick="scrollBttnClick()">
-        <!--<img onmouseover="arrowHover(this)" src="img/down.png" alt="img/downArrow.png">-->
+      </div>                                            <!-- END Social media buttons END -->
+       <div class="scrollBttn" onclick="scrollBttnClick()">
         <p> S C R O L L </p>
       </div>
+   </div>
+</div>
 
+   <div class="secondSection">                         <!-- BEGGINING Second section/ About Us Section BEGGINING -->
+     <div class="aboutWrapper">
+     <div class="aboutTop">
+       <p id="smallGreeting">HELLO THERE </p>
+       <h1 id="bigGreeting"> We are GOlDen Co. </h1>
+       <hr  style="color:white;width:45%;border:1px solid white;margin-bottom:70px;">
+       <p id="aboutIntroduction"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+        <p id="aboutMotto"> "With GOD, life's Golden" </p>
 
-  </div>
+     </div>
+     <div class="aboutBottom"> </div>
+   </div>                                             <!-- END Second section/ About Us Section END  -->
+</div>
 
-  <div class="secondSection">
-    <a id="secondSection"></a>
-
-
-  </div>
-
-
-
-  <script src = "scripts/zenscroll-latest/zenscroll-min.js"></script>
+   <script src = "scripts/zenscroll-latest/zenscroll-min.js"></script>
   </body>
-
-</html>
+ </html>

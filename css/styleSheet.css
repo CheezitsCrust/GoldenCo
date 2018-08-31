@@ -1,20 +1,25 @@
-html{
-
-
-}
 body{
-margin:0 ;
-padding:0;
 
+margin:0;
+padding:0;
+background-color: green;
+background:url("../img/model03.jpg") no-repeat  fixed; /*  important for maintaing image fixed onZoom */
+
+background-size: cover;
 }
+.wrapper{
+  margin:0 auto;
+  width: 1600px;
+}                         /* Home Section Home Section Home Section Home Section Home Section */
 .topContainer{
+  height:100vh;
+
+  margin:0 auto;
   display:grid;
   grid-template-columns: 1fr 1fr 2.4fr 1fr 1fr 1fr 1fr .5fr;
   grid-template-rows: 1fr .5fr 1fr 1fr  1fr 1fr .5fr;
   column-gap:20px;
-  height:1020px;
-  background-color:green;
-  background-image:url("../img/model03.jpg");
+  background-color:;
   scroll-behavior: smooth;
 }
 .logo {
@@ -33,34 +38,39 @@ padding:0;
 	display: block;
 }
 .menuIcon{
-  cursor:pointer;
   grid-column:7/8;
   display:flex;
   flex-direction: row;
+  background: ;
 }
 .menuIcon #Mtext {
-font-size:25px;
-padding-top: 2px;
+
+cursor:pointer;
+font-size:24px;
 color:#ffdf00;
 font-family:'Nunito';
-font-weight: 800;
-position: relative;
-top:10px;
-left:37px;
+font-weight: 900;
+position: fixed;
+top:1%;
+white-space: nowrap;
+background:;
 }
 .menuIcon #Micon {
+margin: 10px 0 0 100px;
+cursor:pointer;
 font-size:44px;
 float:right;
-position: relative;
-top:-17px;
-left:50px;
+position: fixed;
+top:1%;
 color:#555F60;
+background: ;
 }
-.menuIcon:hover #Mtext{
+.menuIcon #Micon:hover{
   color:#ffdf00;
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the side menu */
+  -webkit-text-stroke: .2px black;
 }
-.navBar {
+.navBar {           /* Navigation menu/ side menu  */
   height:100%;
   width:0;
   position:fixed;
@@ -68,9 +78,9 @@ color:#555F60;
   right:0;
   z-index: 1; /* Stay on top */
   background-color:#373D3F;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 1px;
 }
@@ -85,7 +95,7 @@ color:#555F60;
   position: absolute;
   top: 15px;
   right:150px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   display:inline;
   float:right;
@@ -135,6 +145,7 @@ color:#555F60;
 }
 .textArea {
   border-style: solid;
+  width:700px;
   border-width: 3px;
   border-radius: 4px ;
   border-color: rgba(255, 157, 20, 0);
@@ -142,25 +153,23 @@ color:#555F60;
   grid-column: 2/4;
   grid-row: 3/6 ;
   font-size:14px;
+  background: ;
 }
 .textArea p {
   height:30px;
   position:relative;
-  margin: 0 auto;
   top:10px;
   margin:30px 0  10px 10px;
-  padding-left:5px;
-  padding-right:5px;
-  text-align: left;
+  padding-left:15px;
+  padding-right:35px;
   color:#ffdf00;
   background-color:#555F60 ;
   -webkit-text-stroke: .2px #373D3F; /*used to give h1 text and outline */
   font-size:24px;
-  display:inline-block;
-  align-content: center;
   font-family: 'Raleway', sans-serif;
   font-weight:800;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  display:inline;
 }
 .textArea p span:hover {
   color:#ffdf00;
@@ -173,24 +182,24 @@ color:#555F60;
   padding:0 0 40px 10px;
   color:#555F60;373D3F
   display:inline-block;
-  font-size:74px;
+  font-size:6em;
   font-family: 'Raleway', sans-serif;
   font-weight:800;
   word-spacing: 1px;
 }
 .textArea button {
-  background-color:transparent ;
-  height: 50px;
+  background-color: transparent;
+  height: 45px;
   width: 30%;
-  border:4px solid #555F60 ;
-  font-family:'Raleway';
+  border: 4px solid #555F60 ;
+  font-family: 'Raleway';
   font-weight: 800;
   font-size: 15px;
-  color:#555F60;
-  letter-spacing: 4px;
+  color: #555F60;
+  letter-spacing: 2px;
 }
 .textArea #shopBttn {
-  margin-left: 35%;
+  margin-left: 24%;
 }
 .textArea #galleryBttn {
   margin-left: 2%;
@@ -219,6 +228,7 @@ color:#555F60;
   border:3px solid #ffdf00;
   border-radius: 50%;
   background: #ffdf00;
+    color: #555F60;
   opacity: .58;
 }
 .social .fa:hover {
@@ -228,46 +238,24 @@ color:#555F60;
     background: #555F60;
     opacity: 1;
 }
-.social .fa-facebook {
-  /*  background: #3B5998; */
-    color: #555F60;
 
-}
-/* Twitter */
-.social .fa-twitter {
-  /*  background: #55ACEE;*/
-    color: #555F60;
-}
-/* instagram */
-.social .fa-instagram {
-/*  background: #125688;*/
-  color: #555F60;
-}
-/* pinterest */
-.social .fa-pinterest {
-  /*background: #cb2027;*/
-  color: #555F60;
-}
-/* snapchat */
-.social .fa-snapchat-ghost {
-/*  background: #fffc00;*/
-  color: #555F60;
-}
-
-.scrollBttn {
+ .scrollBttn {
   height:100px;
   grid-row:7/8;
   grid-column:6/7;
   border-right: solid 3px #ffdf00;
+  cursor:pointer;
+  align-self: flex-end;
+
 }
 .scrollBttn p{
   text-align:top;
-  position: relative;
+  text-align: right;
   font-size: 10px;
   font-weight: 800;
-  left:25%;
   font-family: 'Archivo', sans-serif;
   color:white;
+  margin-right: 30px;
 }
 .scrollBttn p::before{
   content:"▼";
@@ -278,10 +266,60 @@ color:#555F60;
   transition: .5s;
   color:#ffdf00;
 }
-.secondSection {
-  background-color: #ddd;
-  height:1000px;
-  scroll-behavior: smooth;
+.secondSection {          /* About Section About Section About Section About Section  */
+  background-color: #ffdf00;
+  height: 1000px;
+  padding-top: 50px;
+
+
+}
+.aboutWrapper{
+  margin:0 auto;
+  width: 1600px;
+}
+.aboutTop #smallGreeting {
+
+  vertical-align:middle;
+  text-align:center;
+  margin-top:150px;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif, arial;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: black;
+}
+.aboutTop #bigGreeting {
+  text-align: center;
+  vertical-align: middle;
+  margin-top:20px;
+  font-size: 64px;
+  font-family: 'Raleway', sans-serif, arial;
+  font-weight:800;
+  letter-spacing: .5px;
+  color: white;
+}
+.aboutTop #aboutIntroduction {
+  text-align: center;
+  vertical-align: middle;
+  margin:0 auto;
+  width: 78%;
+  font-size: 34px;
+  font-family: 'Roboto', sans-serif, arial;
+  font-weight:700;
+  letter-spacing: .5px;
+  color: #555F60;
+  line-height: 50px;
+}
+.aboutTop #aboutMotto {
+  float:right;
+  margin: 170px 100px 0 0;
+  font-size: 34px;
+  font-family: 'Raleway', sans-serif, arial;
+  font-weight:700;
+  letter-spacing: 2px;
+  color: white;
+  line-height: 50px;
+  font-weight:800;
 }
 @media screen and (max-height: 450px) {
     .navBar {padding-top: 15px;}
