@@ -1,7 +1,11 @@
+html{
 
+
+}
 body{
 margin:0 ;
 padding:0;
+
 }
 .topContainer{
   display:grid;
@@ -12,7 +16,6 @@ padding:0;
   background-color:green;
   background-image:url("../img/model03.jpg");
   scroll-behavior: smooth;
-  overflow-x: : hidden;
 }
 .logo {
   background-color: ;
@@ -36,9 +39,9 @@ padding:0;
   flex-direction: row;
 }
 .menuIcon #Mtext {
-font-size:30px;
+font-size:25px;
 padding-top: 2px;
-color:#555F60;
+color:#ffdf00;
 font-family:'Nunito';
 font-weight: 800;
 position: relative;
