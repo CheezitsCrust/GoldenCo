@@ -1,11 +1,8 @@
-var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
 document.getElementById('topContainer').setAttribute("style","width:vw");
 document.getElementById('topContainer').style.width='vw';
 
 function scrollBttnClick() {
-var target = document.getElementById("smallGreeting");
+var target = document.getElementById("aboutAnchor");
 zenscroll.to(target);
 }
 

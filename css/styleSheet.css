@@ -9,7 +9,7 @@ background-size: cover;
 }
 .wrapper{
   margin:0 auto;
-  width: 1600px;
+  width: 1400px;
 }                         /* Home Section Home Section Home Section Home Section Home Section */
 .topContainer{
   height:100vh;
@@ -144,11 +144,8 @@ background: ;
     transition: .5s;
 }
 .textArea {
-  border-style: solid;
   width:700px;
-  border-width: 3px;
   border-radius: 4px ;
-  border-color: rgba(255, 157, 20, 0);
   /** border-color: rgba(255, 157, 20, 0.26); **/
   grid-column: 2/4;
   grid-row: 3/6 ;
@@ -266,32 +263,51 @@ background: ;
   transition: .5s;
   color:#ffdf00;
 }
+.shopSection {          /* About Section About Section About Section About Section  */
+  background-color: #ffdf00;
+  height: 800px;
+  padding-top: 20px;
+  margin-bottom: 150px;
+}
+.shopSection #shopContainer{
+  grid-template-columns: 1fr 1fr 2.4fr 1fr 1fr 1fr 1fr .5fr;
+  grid-template-rows: 1fr .5fr 1fr 1fr  1fr 1fr .5fr;
+  column-gap:20px;
+}
 .secondSection {          /* About Section About Section About Section About Section  */
   background-color: #ffdf00;
-  height: 1000px;
-  padding-top: 50px;
-
-
+  height: 800px;
+  padding-top: 20px;
 }
 .aboutWrapper{
   margin:0 auto;
-  width: 1600px;
+  width: 1400px;
 }
-.aboutTop #smallGreeting {
-
+.aboutTop #aboutAnchor{
+  width: 80%;
+  font-size: 24px;
   vertical-align:middle;
   text-align:center;
-  margin-top:150px;
+  display: hidden;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+.aboutTop #smallGreeting {
+  vertical-align:middle;
+  text-align:center;
   font-size: 24px;
   font-family: 'Raleway', sans-serif, arial;
   font-weight: 800;
   letter-spacing: 4px;
   color: black;
+  margin-top: 10px;
+
 }
 .aboutTop #bigGreeting {
   text-align: center;
   vertical-align: middle;
   margin-top:20px;
+  margin-bottom: 20px;
   font-size: 64px;
   font-family: 'Raleway', sans-serif, arial;
   font-weight:800;
@@ -312,7 +328,7 @@ background: ;
 }
 .aboutTop #aboutMotto {
   float:right;
-  margin: 170px 100px 0 0;
+  margin: 100px 100px 0 0;
   font-size: 34px;
   font-family: 'Raleway', sans-serif, arial;
   font-weight:700;
