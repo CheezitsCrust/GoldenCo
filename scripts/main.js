@@ -2,7 +2,7 @@ document.getElementById('topContainer').setAttribute("style","width:vw");
 document.getElementById('topContainer').style.width='vw';
 
 function scrollBttnClick() {
-var target = document.getElementById("aboutAnchor");
+var target = document.getElementById("shopAnchor");
 zenscroll.to(target);
 }
 

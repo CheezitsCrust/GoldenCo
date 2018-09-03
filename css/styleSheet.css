@@ -13,7 +13,6 @@ background-size: cover;
 }                         /* Home Section Home Section Home Section Home Section Home Section */
 .topContainer{
   height:100vh;
-
   margin:0 auto;
   display:grid;
   grid-template-columns: 1fr 1fr 2.4fr 1fr 1fr 1fr 1fr .5fr;
@@ -145,12 +144,13 @@ background: ;
 }
 .textArea {
   width:700px;
-  border-radius: 4px ;
   /** border-color: rgba(255, 157, 20, 0.26); **/
   grid-column: 2/4;
   grid-row: 3/6 ;
   font-size:14px;
   background: ;
+  position: relative;
+  left:-30px;
 }
 .textArea p {
   height:30px;
@@ -263,19 +263,117 @@ background: ;
   transition: .5s;
   color:#ffdf00;
 }
-.shopSection {          /* About Section About Section About Section About Section  */
+.shopSection {          /* Shop Section About Section About Section About Section  */
   background-color: #ffdf00;
-  height: 800px;
   padding-top: 20px;
-  margin-bottom: 150px;
 }
-.shopSection #shopContainer{
-  grid-template-columns: 1fr 1fr 2.4fr 1fr 1fr 1fr 1fr .5fr;
-  grid-template-rows: 1fr .5fr 1fr 1fr  1fr 1fr .5fr;
+.shopWrapper{
+  margin:0 auto;
+  width: 1400px;
+}
+.shopContainer{
+  height: 1200px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   column-gap:20px;
+  row-gap:10px;
+}
+.shopContainer #shopAnchor{
+  grid-column:5/6;
+  grid-row: 1/2;
+  width: 80%;
+  height:40px;
+  font-size: 24px;
+  vertical-align:middle;
+  text-align:center;
+  visibility: hidden;
+  margin-bottom: 10px;
+}
+.shopContainer #shopIntro{
+height:70px;
+grid-column: 3/5;
+grid-row: 1/2;
+vertical-align:middle;
+text-align:center;
+position: relative;
+top:10px;
+font-size: 24px;
+font-family: 'Raleway', sans-serif, arial;
+font-weight: 800;
+letter-spacing: 4px;
+color: black;
+border-bottom: 2px solid white;
+}
+.topItems{
+  background-color: green;
+  margin:0 20px 40px 20px;
+  vertical-align:middle;
+  text-align:center;
+  position: relative;
+  top:-70px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif, arial;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.topItems img{
+max-width:100%;
+height:100%;
+}
+.shopContainer #one{
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+.shopContainer #two{
+  grid-column: 3/4;
+  grid-row: 2/4;
+}
+.shopContainer #three{
+  grid-column: 4/5;
+  grid-row: 2/4;
+}
+.shopContainer #four{
+  grid-column: 5/6;
+  grid-row: 2/4;
+}
+.shopContainer #five{
+  grid-column: 2/3;
+  grid-row: 4/6;
+}
+.shopContainer #six{
+  grid-column: 3/4;
+  grid-row: 4/6;
+}
+.shopContainer #seven{
+  grid-column: 4/5;
+  grid-row: 4/6;
+}
+.shopContainer #eight{
+  grid-column: 5/6;
+  grid-row: 4/6;
+}
+.shopContainer #shopPageLink{
+  grid-column: 3/5;
+  grid-row: 6/7;
+  vertical-align:middle;
+  text-align:center;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif, arial;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: black;
+  position: relative;
+  top: -50px;
+  background: #f1f1f1;
+  height:70px;
+  line-height: 70px;
+}
+.shopContainer #shopPageLink:hover{
+  color: #ffdf00;
 }
 .secondSection {          /* About Section About Section About Section About Section  */
-  background-color: #ffdf00;
+  background-color: #f1f1f1;
   height: 800px;
   padding-top: 20px;
 }
@@ -312,7 +410,7 @@ background: ;
   font-family: 'Raleway', sans-serif, arial;
   font-weight:800;
   letter-spacing: .5px;
-  color: white;
+  color: #ffdf00;
 }
 .aboutTop #aboutIntroduction {
   text-align: center;
@@ -333,7 +431,7 @@ background: ;
   font-family: 'Raleway', sans-serif, arial;
   font-weight:700;
   letter-spacing: 2px;
-  color: white;
+  color: #ffdf00;
   line-height: 50px;
   font-weight:800;
 }
