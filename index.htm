@@ -1,110 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Resume, Ceevee, Online">
-    <meta name="keywords" content="Resume">
-    <meta name="author" content="Designe: © Copyright Colorlib - Glint, Web Programmer: Yelsin Sepulveda">
-     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Spectral|Archivo|Nunito|Raleway:400,800|Assistant|Montserrat" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
-    <script src="scripts/main.js"></script>
-     <title> Golden Co. </title>
-  </head>
 
-   <body>
-     <div class="wrapper">
-    <div class="topContainer" id="topContainer"><!-- BEGGINING Top section / Home Section -->
-      <div class="navBar" id="navBar">              <!-- BEGGINING Navigation menu / side menu -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Resume, Ceevee, Online">
+  <meta name="keywords" content="Resume">
+  <meta name="author" content="Designe: © Copyright Colorlib - Glint, Web Programmer: Yelsin Sepulveda">
+  <link rel="icon" href="Logo02.png">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Spectral|Archivo|Nunito|Raleway:400,800|Assistant|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styleSheet.css">
+  <script src="scripts/main.js"></script>
+  <title> Golden Co. </title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="topContainer" id="topContainer">
+      <!-- BEGGINING Top section / Home Section -->
+      <div class="navBar" id="navBar">
+        <!-- BEGGINING Navigation menu / side menu -->
         <ul>
           <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <span> NAVIGATION </span> &times; </a></li>
           <li onclick="jumpHome()"> <a href="#topContainer">Home</a> </li>
           <li onclick="jumpShop()"><a href="#shopAnchor">Shop</a></li>
           <li onclick="jumpAbout()"><a href="#aboutAnchor">About</a></li>
-          <li onclick="jumpGallery()"><a href="#">Gallery</a></li>
+          <li onclick="jumpGallery()"><a href="#contactAnchor">Contact</a></li>
         </ul>
-         <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
         <hr style="height:2px;color:#ffdf00;background:#ffdf00;border:none;">
-         <a href="#" class="fa fa-facebook"></a>    <!-- BEGGINING Social media button list -->
+        <a href="#" class="fa fa-facebook"></a> <!-- BEGGINING Social media button list -->
         <a href="#" class="fa fa-twitter"></a>
         <a href="https://www.instagram.com/goldenco__/?hl=en" target="_blank" class="fa fa-instagram"></a>
         <a href="#" class="fa fa-snapchat-ghost"></a>
-        <a href="#" class="fa fa-pinterest"></a>    <!-- END Social media button list END -->
-      </div>                                  <!-- EnD Navigation menu / side menu END-->
-       <div class="logo"> <!-- page logo -->
+        <a href="#" class="fa fa-pinterest"></a> <!-- END Social media button list END -->
+      </div> <!-- EnD Navigation menu / side menu END-->
+      <div class="logo">
+        <!-- page logo -->
         <img src="Logo02.png" alt="Logo.jpg" >
-      </div>              <!-- END page logo END -->
-       <div class="menuIcon" onclick="openNav()">         <!-- menu icons -->
-      <p id="Mtext" > M E N U </p>
-      <p id="Micon">  &#9776;</p>
-      </div>                                              <!-- END menu icons END -->
-       <div class="textArea"> <!-- main text area -->
-        <p> WITH <span> GOD</span>, LIFE'S GOLDEN</p>
-        <h1>Lorem ipsum dolor si amet, adipisicing sitamet dolor </h1>
-        <button id="shopBttn"> SHOP GolDen Co. </button>
-        <button id="galleryBttn"> VIEW OUR GALLERY </button>
-       </div>                 <!-- END main text area END -->
-       <div class="social">                           <!-- Social media buttons -->
+      </div> <!-- END page logo END -->
+        <div class="menuIcon" onclick="openNav()">
+          <!-- menu icons -->
+          <p id="Mtext"> M E N U </p>
+          <p id="Micon"> &#9776;</p>
+        </div> <!-- END menu icons END -->
+        <div class="textArea">
+          <!-- main text area -->
+          <p> WITH <span> GOD</span>, LIFE'S GOLDEN</p>
+          <h1>Lorem ipsum dolor si amet, adipisicing sitamet dolor </h1>
+          <button id="shopBttn"> SHOP GolDen Co. </button>
+          <button id="galleryBttn"> VIEW OUR GALLERY </button>
+        </div> <!-- END main text area END -->
+        <div class="social">
+          <!-- Social media buttons -->
           <a href="#" class="fa fa-facebook"></a>
           <a href="#" class="fa fa-twitter"></a>
           <a href="https://www.instagram.com/goldenco__/?hl=en" target="_blank" class="fa fa-instagram"></a>
           <a href="#" class="fa fa-snapchat-ghost"></a>
           <a href="#" class="fa fa-pinterest"></a>
-      </div>                                            <!-- END Social media buttons END -->
-       <div class="scrollBttn" onclick="scrollBttnClick()">
-        <p> S C R O L L </p>
+        </div> <!-- END Social media buttons END -->
+        <div class="scrollBttn" onclick="scrollBttnClick()">
+          <p> S C R O L L </p>
+        </div>
       </div>
-   </div>
-</div>
+    </div>
 
-<div class="shopSection">                         <!-- BEGGINING Second section/ About Us Section BEGGINING -->
-  <div class="shopWrapper">
-  <div class="shopContainer">
-    <p id="shopAnchor">Anchor</p>
-    <h3 id="shopIntro">Top <br> Most Purchased</h3>
-      <div class="topItems" id="one"> <img src="img/shopItem1.jpg">
+    <div class="shopSection">
+      <!-- BEGGINING Shop section/ About Us Section BEGGINING -->
+      <div class="shopWrapper">
+        <div class="shopContainer">
+          <p id="shopAnchor">Anchor</p>
+          <h3 id="shopIntro">Top <br> Most Purchased</h3>
+          <div class="topItems" id="one"> <img src="img/shopItem1.jpg">
       --ItemName01-- <br> Price: &#36;9.99 USD </div>
-      <div class="topItems" id="two"> <img src="img/model04.jpg">
+            <div class="topItems" id="two"> <img src="img/model04.jpg">
       --ItemName02-- <br> Price: &#36;9.99 USD </div>
-      <div class="topItems" id="three"> <img src="img/shopItem1.jpg">
+              <div class="topItems" id="three"> <img src="img/shopItem1.jpg">
       --ItemName03-- <br> Price: &#36;9.99 USD </div>
-      <div class="topItems" id="four"> <img src="img/model04.jpg">
+                <div class="topItems" id="four"> <img src="img/model04.jpg">
       --ItemName04-- <br> Price: &#36;9.99 USD </div>
-      <div class="topItems" id="five"> <img src="img/model04.jpg">
+                  <div class="topItems" id="five"> <img src="img/model04.jpg">
       --ItemName05-- <br> Price: &#36;9.99 USD </div>
-      <div class="topItems" id="six"> <img src="img/shopItem1.jpg">
+                    <div class="topItems" id="six"> <img src="img/shopItem1.jpg">
       --ItemName06-- <br> Price: &#36;9.99 USD </div>
-      <div class="topItems" id="seven"> <img src="img/model04.jpg">
+                      <div class="topItems" id="seven"> <img src="img/model04.jpg">
       --ItemName07-- <br> Price: &#36;9.99 USD </div>
-      <div class="topItems" id="eight"> <img src="img/shopItem1.jpg">
+                        <div class="topItems" id="eight"> <img src="img/shopItem1.jpg">
       --ItemName08-- <br> Price: &#36;9.99 USD </div>
-     <a id="shopPageLink"> Shop all Golden Co. </a>
-  </div>
-</div>                                             <!-- END Second section/ About Us Section END  -->
+                          <a id="shopPageLink"> Shop all Golden Co. </a>
+                        </div>
+                      </div> <!-- END Shop section/ About Us Section END  -->
+                    </div>
+                    <div class="aboutSection">
+                      <!-- BEGGINING aboutSection section/ About Us Section BEGGINING -->
+                      <div class="aboutWrapper">
+                        <div class="aboutTop">
+                          <p id="aboutAnchor">Anchor</p>
+                          <p id="smallGreeting">HELLO THERE </p>
+                          <h1 id="bigGreeting"> We are GOlDen Co. </h1>
+                          <hr style="color:#ffdf00;width:45%;border:1px solid #ffdf00;margin-bottom:20px;">
+                          <p id="aboutIntroduction"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                          <p id="aboutMotto"> "- With GOD, life's Golden" </p>
+                        </div>
+
+                        <div class="aboutBottom">
+                          <img class="founders" src="img/founderJosward.jpg" alt="Smiley face" height="700" width="600">
+                          <p id="founderName"> - Josward Lara <br> <span style="margin-left: 25px;">  Founder </span> &amp; CEO </p>
+                          <h4 id="foundeMsg"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut.</h1>
+        </div>
+  </div> <!-- END Second section/ About Us Section END  -->
 </div>
 
-   <div class="secondSection">                         <!-- BEGGINING Second section/ About Us Section BEGGINING -->
-     <div class="aboutWrapper">
-     <div class="aboutTop">
-       <p id="aboutAnchor">Anchor</p>
-       <p id="smallGreeting">HELLO THERE </p>
-       <h1 id="bigGreeting"> We are GOlDen Co. </h1>
-       <hr  style="color:white;width:45%;border:1px solid white;margin-bottom:20px;">
-       <p id="aboutIntroduction"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-        <p id="aboutMotto"> "- With GOD, life's Golden" </p>
+<div class="contact">
+  <div class="contactWrapper" id="contactAnchor">
+    <h1><hr style="position:relative;top:130px;border:1px solid black;margin:0 auto;">  CONTACT   </h1>
+    <hr style="margin: 0 auto;position:relative;top:-41px;left:280px;width:150px;border:1px solid black;">    <!-- hr is for lines on both sides of contact text -->
 
+    <div class="googleMapsView">
      </div>
-     <div class="aboutBottom"> </div>
-   </div>                                             <!-- END Second section/ About Us Section END  -->
+
+      <p style="margin-top:10%;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+<h2 id="contactCompanyName"> Golden Co. </h2>
+<h2 id="mailingAddress"> Mailing Adress </h2>
+<p id="adress"> 8642 BuffleHead Drive <br> Park City, Utha, 84098 </p>
+
+<h2 id="streetAddress" style="margin-top:4%;"> Studio </h2>
+<p id="adress" > 8578 Gorgoza Pine Rd <br> Building B <br> Park City, Utha, USA </p>
+
+
+  </div>
 </div>
 
+<div class="footer">
 
+  <a href="#topContainer" id="bottomNav"> Home &emsp; |</a>
+  <a href="#shopAnchor" id="bottomNav"> &emsp; Shop &emsp; |</a>
+  <a href="#aboutAnchor" id="bottomNav"> &emsp; About &emsp; |</a>
+  <a href="#contactAnchor" id="bottomNav"> &emsp; Contact </a>
 
-   <script src = "scripts/zenscroll-latest/zenscroll-min.js"></script>
-  </body>
- </html>
+  <p id="copyright"> &copy; 2018 Yelsin Sepulveda <br>
+    Designe by
+    <a href="https://colorlib.com/wp/template/glint/" target="_blank" style="text-decoration: none;color:white;">
+       Glint. </a></p>
+   </div>
+
+<script src="scripts/zenscroll-latest/zenscroll-min.js"></script>
+</body>
+
+</html>

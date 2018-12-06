@@ -1,19 +1,19 @@
-document.getElementById('topContainer').setAttribute("style","width:vw");
-document.getElementById('topContainer').style.width='vw';
+document.getElementById('topContainer').setAttribute("style", "width:vw");
+document.getElementById('topContainer').style.width = 'vw';
 
 function scrollBttnClick() {
-var target = document.getElementById("shopAnchor");
-zenscroll.to(target);
+  var target = document.getElementById("shopAnchor");
+  zenscroll.to(target);
 }
 
 function openNav() {
-    document.getElementById("navBar").style.width = "330px";
-    document.getElementById("Mtext").style.visibility = "hidden";
+  document.getElementById("navBar").style.width = "330px";
+  document.getElementById("Mtext").style.visibility = "hidden";
 }
 
 function closeNav() {
-    document.getElementById("navBar").style.width = "0";
-    document.getElementById("Mtext").style.visibility = "visible";
+  document.getElementById("navBar").style.width = "0";
+  document.getElementById("Mtext").style.visibility = "visible";
 }
 
 function jumpShop() {
@@ -22,7 +22,7 @@ function jumpShop() {
 }
 
 
-function jumpGallery(){
+function jumpGallery() {
   var jumpG = document.getElementById("navBar");
   zenscroll.to(jumpG);
 }
